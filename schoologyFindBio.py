@@ -11,9 +11,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 # All users will be checked and when it finds the bio, it will print the 'BIO IS FOUND' message.
 
 
-email = 'nisa.uyan@agu.edu.tr'
-password = '19asiNayu.03'
-bio_info = 'Bioengineering'
+email = 'YOUR_EMAIL'
+password = 'YOUR_PASSWORD'
+bio_info = 'YOUR_BIO'
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 
