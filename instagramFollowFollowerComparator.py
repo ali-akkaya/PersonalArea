@@ -6,12 +6,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-username= "username"
-password = "password"
+username= "alibutstraight"
+password = "2sGJ#9JN"
 def launchBrowser():
     chrome_options = Options()
     chrome_options.add_argument("start-maximized")
-    driver = webdriver.Chrome(executable_path='/Users/aliakkaya/PycharmProjects/PersonalArea/chromedriver',options=chrome_options)
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
     driver.get("https://www.instagram.com")
     return driver
